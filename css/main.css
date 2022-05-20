@@ -1,0 +1,621 @@
+/* ------ Подключение шрифтов ------ */
+@font-face {
+  font-family: 'Museo Sans 100';
+  src: url('../fonts/MueoSansCyrls-100.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/MuseoSansCyrl-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/MuseoSansCyrl-100.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/MuseoSansCyrl-100.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/MuseoSansCyrl-100.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/MuseoSansCyrl-100.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Museo Sans 300';
+  src: url('../fonts/MuseoSansCyrl-300.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/MuseoSansCyrl-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/MuseoSansCyrl-300.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/MuseoSansCyrl-300.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/MuseoSansCyrl-300.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Museo Sans 900';
+  src: url('../fonts/MuseoSansCyrl-900.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/MuseoSansCyrl-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/MuseoSansCyrl-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/MuseoSansCyrl-900.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/MuseoSansCyrl-900.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/MuseoSansCyrl-900.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Natasha';
+  src: url('../fonts/Natasha.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Natasha.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Natasha.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Natasha.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Natasha.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Natasha.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+body {
+	font-family: 'Museo Sans 300', sans-serif;
+	font-size: 17px;
+	color: #fff;
+	padding: 0;
+	letter-spacing: 0.06em;
+	margin: 0;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+	color: #fff;
+	text-decoration: none;
+}
+
+p {
+	margin: 0;
+    font-size: 14px;
+    line-height: 1.4em;
+    margin-bottom: 1em;
+    color: #22241b;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+	font-family: 'Natasha';
+	letter-spacing: 0.15em;
+}
+
+h2 {
+	letter-spacing: 0.12em;
+	font-size: 37px;
+}
+
+h3 {
+	color: #888886;
+	font-size: 22px;
+	letter-spacing: 0.12em;
+	font-family: 'Museo Sans 300';
+}
+
+.d-flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.justify-content-between {
+	justify-content: space-between;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+/* ------ Первый екран ------ */
+
+.header {
+	background: #292f22 url(../img/fon.jpg) no-repeat center top / cover;
+	padding-top: 56px;
+	padding-bottom: 82px;
+
+}
+
+.navigation {
+	justify-content: space-between;
+}
+
+.navigation__logo {
+	font-size: 17px;
+	font-weight: 100;
+	text-transform: uppercase;
+	letter-spacing: 0.17em;
+}
+
+.navigation__logo_text {
+	font-size: 17px;
+	font-weight: 900;
+	letter-spacing: 0.16em;
+}
+
+.menu {
+	margin-right: 30px;
+}
+
+.menu__list {
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 900;
+	margin-left: 45px;
+    letter-spacing: 0.15em;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.menu__list::before {
+	content: '';
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	background-color: #fff;
+	transition: 0.1s;
+}
+
+.menu__list:hover:before {
+	width: 100%;
+}
+
+.header__link {
+	font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0.13em;
+    border-bottom: 1px solid #676965;
+    max-height: 22px;
+}
+
+.header__title {
+	text-align: center;
+	margin-top: 290px;
+    font-size: 47px;
+    font-family: Natasha;
+    letter-spacing: 0.15em;
+}
+
+.header__text {
+	text-align: center;
+	font-size: 29px;
+	text-transform: uppercase;
+	letter-spacing: 0.11em;
+    margin-top: 18px;
+    margin-bottom: 254px;
+    color: #fff;
+}
+
+.header__down {
+	font-size: 18px;
+	width: 40px;
+	height: 40px;
+	display: block;
+	color: #bebeb7;
+	border-radius: 50%;
+	margin: 0 auto;
+	text-align: center;
+	border: 1px solid #fff;
+	line-height: 34px;
+}
+
+.header__down:hover {
+	color: #000;
+	background: #fff;
+}
+
+/* ------ Второй екран ------ */
+
+.about {
+	padding-top: 82px;
+	padding-bottom: 60px;
+	justify-content: space-between;
+}
+
+.about__title {
+	color: #000;
+	font-size: 37px;
+	letter-spacing: 0.11em;
+	margin-bottom: 71px;
+}
+
+.about__text {
+	width: 434px;
+	margin-right: 38px;
+}
+
+.about__description {
+	letter-spacing: 0.05em;
+	line-height: 27px;
+	margin-bottom: 27px;
+}
+
+.about__heading {
+	margin-bottom: 40px;
+}
+
+.merit {
+	width: 470px;
+}
+
+.merit__description {
+	color: #204d15;
+	font-size: 20px;
+	width: 70px;
+	height: 70px;
+	border: 2px solid #3e6534;
+	text-align: center;
+	position: relative;
+	margin-left: 39px;
+    margin-right: 51px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: rotate(45deg);
+}
+
+.merit__description:after {
+	content:'';
+	display: block;
+	position: absolute;
+	width: 58px;
+	height: 58px;
+	border: 1px solid #cddbc3;
+
+}
+
+.merit__numbers {
+	transform: rotate(-45deg);
+	color: #204d15;
+}
+
+.merit__heading {
+	margin-bottom: 60px;
+}
+
+.merit__text {
+	color: #22241b;
+    margin-top: 40px;
+    font-size: 12px;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.01em;
+    line-height: 17px;
+}
+
+.communication {
+	margin-top: 64px;
+	flex-wrap: wrap;
+}
+
+.communication__list {
+	margin-top: 30px;
+}
+
+.communication__items {
+	margin-top: 15px;
+}
+
+.communication__items a {
+	font-size: 14px;
+	letter-spacing: 0.12em;
+	color: #204d15;
+	border-bottom: 1px solid #204d15;
+}
+
+.communication__image {
+   	margin-left: 48px;
+    margin-top: 64px;
+}
+
+.communication__img {
+	justify-content: center;
+    text-align: center;
+    align-items: center;
+	position: relative;
+    width: 64px;
+	height: 64px;
+	background-color: #eef1ed;
+	border-radius: 50%;
+}
+
+.communication__man {
+	position: absolute;
+}
+
+.communication__element {
+	font-size: 14px;
+	font-weight: 300;
+	color: #60615a;
+	letter-spacing: 0.02em;
+	margin-left: 20px;
+	margin-top: 22px;	
+}
+
+/* ------ Третий екран ------ */
+
+.skills {
+	padding-bottom: 80px;
+}
+
+.skills__heading {
+	color: #000;
+	font-size: 37px;
+	margin-bottom: 58px;
+}
+
+.skills__list {
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.skills__items {
+	width: 235px;
+}
+
+.skills__description {
+	font-size: 13px;
+	color: #204d15;
+	width: 62px;
+	height: 62px;
+	border: 2px solid #3e6534;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.skills__description:after {
+	content:'';
+	display: block;
+	position: absolute;
+	width: 48px;
+	height: 48px;
+	color: #b2b7b1;
+	border: 1px solid #b2b7b1;
+	border-radius: 100%;
+}
+
+.skills__text {
+	color: #4b4c47;
+	font-size: 15px;
+	font-weight: 900;
+	text-transform: uppercase;
+	margin-top: 22px;
+    margin-left: 28px;
+    letter-spacing: 0.15em;
+}
+
+/* ------ Четвертый екран ------ */
+
+.work__heading {
+	color: #22241b;
+	margin-bottom: 56px;
+}
+
+.work__items {
+	justify-content: space-between;
+}
+
+.work__image {
+	position:relative;
+}
+
+.work__image:hover .work__effect {
+	opacity: 1;
+}
+
+.work__effect {
+	background: rgba(0,0,0,0.64);
+	color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	font-size: 15px;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
+	cursor: pointer;
+	padding-top: 42%;
+	transition: all 0.5s ease;
+} 
+
+.work__effect a {
+	color: #fff;
+	font-size: 13px;
+	font-weight: 300;
+	text-transform: none;
+	border-bottom: 1px solid #858587;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.work__link {
+	display: inline-block;
+}
+
+.work__title {
+	font-size: 15px;
+	font-weight: 900;
+	color: #fff;
+}
+
+/* ------ Пятый екран ------ */
+
+.footer {
+	padding-top: 119px;
+	padding-bottom: 108px;
+}
+
+.footer__text {
+	color: #6d6f69;
+	font-size: 11px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+}
+
+/* ------ Media Queries ------ */
+
+@media screen and (max-width: 1200px) {
+	
+}
+
+@media screen and (max-width: 992px) {
+	.container {
+		width: 700px;
+	}
+
+	.work__image {
+		width: 30%;
+	}
+
+	.work__img {
+		max-width: 100%;
+		display: block;
+	}
+
+	.merit__list {
+	flex-wrap: wrap;
+
+	}
+
+	.merit__items {
+		margin-top: 20px;
+		margin-left: 10px;
+	}
+
+	.skills__list{
+		max-width: 650px;
+	}
+
+	.skills__items {
+		margin-top: 12px;
+	}
+
+	.communication {
+		margin-top: 34px;
+	}
+
+	.communication__image {
+		margin: 0;
+		margin-top: 30px;
+	}
+	
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		width: 560px;
+	}
+
+	.navigation {
+	flex-wrap: wrap;
+	}
+
+	.about__list {
+		flex-direction: column;
+	}
+
+	.about__text, .merit {
+		width: 100%;
+	}
+
+	.merit__items {
+		margin-right: 12px;
+	}
+
+	.merit__list {
+		flex-wrap: nowrap;
+	}
+
+	.communication__image {
+		margin-left: 90px;
+	}
+
+
+	.skills__list {
+		flex-direction: row;
+	}
+
+}
+
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+	}
+
+	.header {
+	padding-top: 26px;
+    padding-bottom: 54px;
+	}
+
+	.header__title {
+		    margin-top: 190px;
+	}
+
+	.header__text {
+		    margin-bottom: 154px;
+	}
+
+	.work__items {
+		flex-direction: column;
+	}
+
+	.work__image {
+		width: 100%;
+		max-width: 300px;
+		margin-bottom: 20px;
+	}
+
+	.communication {
+		flex-direction: column;
+	}
+
+	.communication__image {
+		margin: 30px 0 0 0px;
+	}
+
+	.skills__list {
+    flex-direction: column;
+    margin-bottom: 29px;
+	}
+
+	.skills__items {
+    margin-top: 30px;
+	}
+
+	.merit__list {
+	flex-wrap: wrap;
+	}
+
+	.navigation {
+	flex-wrap: wrap;
+	}
+
+	.menu {
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
